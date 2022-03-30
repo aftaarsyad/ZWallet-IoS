@@ -31,6 +31,8 @@
 		B349C52927F3038E00F2F1E9 /* NunitoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B349C51B27F3038E00F2F1E9 /* NunitoSans-SemiBold.ttf */; };
 		B349C52A27F3038E00F2F1E9 /* NunitoSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B349C51C27F3038E00F2F1E9 /* NunitoSans-ExtraLightItalic.ttf */; };
 		B349C52B27F3038E00F2F1E9 /* NunitoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B349C51D27F3038E00F2F1E9 /* NunitoSans-ExtraLight.ttf */; };
+		B37029B127F455AF0069F69E /* LoginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37029AF27F455AF0069F69E /* LoginsViewController.swift */; };
+		B37029B227F455AF0069F69E /* LoginsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37029B027F455AF0069F69E /* LoginsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		B349C51B27F3038E00F2F1E9 /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		B349C51C27F3038E00F2F1E9 /* NunitoSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		B349C51D27F3038E00F2F1E9 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		B37029AF27F455AF0069F69E /* LoginsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginsViewController.swift; sourceTree = "<group>"; };
+		B37029B027F455AF0069F69E /* LoginsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,7 @@
 		B349C4DC27F2FCE400F2F1E9 /* ZWallet */ = {
 			isa = PBXGroup;
 			children = (
+				B37029A227F430860069F69E /* Module */,
 				B349C50F27F3035000F2F1E9 /* Fonts */,
 				B349C4DD27F2FCE400F2F1E9 /* AppDelegate.swift */,
 				B349C4DF27F2FCE400F2F1E9 /* SceneDelegate.swift */,
@@ -178,6 +183,63 @@
 				B349C51427F3038D00F2F1E9 /* NunitoSans-SemiBoldItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B37029A227F430860069F69E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				B37029A427F4310B0069F69E /* RegisterModule */,
+				B37029A327F430D60069F69E /* LoginModule */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		B37029A327F430D60069F69E /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				B37029A827F4316D0069F69E /* View */,
+				B37029A727F431640069F69E /* Router */,
+				B37029A627F431590069F69E /* Presenter */,
+				B37029A527F4314D0069F69E /* Interactor */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		B37029A427F4310B0069F69E /* RegisterModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RegisterModule;
+			sourceTree = "<group>";
+		};
+		B37029A527F4314D0069F69E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B37029A627F431590069F69E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B37029A727F431640069F69E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B37029A827F4316D0069F69E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B37029AF27F455AF0069F69E /* LoginsViewController.swift */,
+				B37029B027F455AF0069F69E /* LoginsViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37029B227F455AF0069F69E /* LoginsViewController.xib in Resources */,
 				B349C52927F3038E00F2F1E9 /* NunitoSans-SemiBold.ttf in Resources */,
 				B349C52427F3038E00F2F1E9 /* NunitoSans-ExtraBold.ttf in Resources */,
 				B349C4EA27F2FCE500F2F1E9 /* LaunchScreen.storyboard in Resources */,
@@ -325,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37029B127F455AF0069F69E /* LoginsViewController.swift in Sources */,
 				B349C50E27F2FE2800F2F1E9 /* LoginViewController.swift in Sources */,
 				B349C4E227F2FCE400F2F1E9 /* ViewController.swift in Sources */,
 				B349C4DE27F2FCE400F2F1E9 /* AppDelegate.swift in Sources */,
@@ -509,7 +573,6 @@
 				INFOPLIST_FILE = ZWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -536,7 +599,6 @@
 				INFOPLIST_FILE = ZWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

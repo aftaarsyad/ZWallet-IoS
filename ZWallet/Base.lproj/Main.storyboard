@@ -182,7 +182,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.93877551020408168" green="0.98127828809874318" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.98039215686274506" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vs6-xX-fNc" firstAttribute="top" secondItem="4ju-Kl-L2C" secondAttribute="bottom" constant="61" id="9W9-Ls-KBo"/>
                             <constraint firstAttribute="bottom" secondItem="vs6-xX-fNc" secondAttribute="bottom" id="flE-0x-ggr"/>
@@ -212,8 +212,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="envelope" catalog="system" width="128" height="93"/>
-        <image name="lock" catalog="system" width="128" height="128"/>
+        <image name="envelope" catalog="system" width="32" height="32"/>
+        <image name="lock" catalog="system" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
