@@ -33,6 +33,10 @@
 		B349C52B27F3038E00F2F1E9 /* NunitoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B349C51D27F3038E00F2F1E9 /* NunitoSans-ExtraLight.ttf */; };
 		B37029B127F455AF0069F69E /* LoginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37029AF27F455AF0069F69E /* LoginsViewController.swift */; };
 		B37029B227F455AF0069F69E /* LoginsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37029B027F455AF0069F69E /* LoginsViewController.xib */; };
+		B3E2D4CC27F555D70048D0F4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4CB27F555D70048D0F4 /* LoginView.swift */; };
+		B3E2D4CE27F578160048D0F4 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4CD27F578160048D0F4 /* LoginRouter.swift */; };
+		B3E2D4D527F57C150048D0F4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4D327F57C150048D0F4 /* SignUpViewController.swift */; };
+		B3E2D4D627F57C150048D0F4 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E2D4D427F57C150048D0F4 /* SignUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		B349C51D27F3038E00F2F1E9 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
 		B37029AF27F455AF0069F69E /* LoginsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginsViewController.swift; sourceTree = "<group>"; };
 		B37029B027F455AF0069F69E /* LoginsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginsViewController.xib; sourceTree = "<group>"; };
+		B3E2D4CB27F555D70048D0F4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B3E2D4CD27F578160048D0F4 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		B3E2D4D327F57C150048D0F4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B3E2D4D427F57C150048D0F4 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +196,7 @@
 		B37029A227F430860069F69E /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				B37029A427F4310B0069F69E /* RegisterModule */,
+				B37029A427F4310B0069F69E /* SignUpModule */,
 				B37029A327F430D60069F69E /* LoginModule */,
 			);
 			path = Module;
@@ -205,11 +213,15 @@
 			path = LoginModule;
 			sourceTree = "<group>";
 		};
-		B37029A427F4310B0069F69E /* RegisterModule */ = {
+		B37029A427F4310B0069F69E /* SignUpModule */ = {
 			isa = PBXGroup;
 			children = (
+				B3E2D4D227F57BB50048D0F4 /* View */,
+				B3E2D4D127F57BAD0048D0F4 /* Router */,
+				B3E2D4D027F57B9C0048D0F4 /* Presenter */,
+				B3E2D4CF27F57B8C0048D0F4 /* Interactor */,
 			);
-			path = RegisterModule;
+			path = SignUpModule;
 			sourceTree = "<group>";
 		};
 		B37029A527F4314D0069F69E /* Interactor */ = {
@@ -229,6 +241,7 @@
 		B37029A727F431640069F69E /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				B3E2D4CD27F578160048D0F4 /* LoginRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -238,6 +251,37 @@
 			children = (
 				B37029AF27F455AF0069F69E /* LoginsViewController.swift */,
 				B37029B027F455AF0069F69E /* LoginsViewController.xib */,
+				B3E2D4CB27F555D70048D0F4 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3E2D4CF27F57B8C0048D0F4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B3E2D4D027F57B9C0048D0F4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B3E2D4D127F57BAD0048D0F4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B3E2D4D227F57BB50048D0F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3E2D4D327F57C150048D0F4 /* SignUpViewController.swift */,
+				B3E2D4D427F57C150048D0F4 /* SignUpViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -361,6 +405,7 @@
 				B349C52727F3038E00F2F1E9 /* NunitoSans-Black.ttf in Resources */,
 				B349C52227F3038E00F2F1E9 /* NunitoSans-SemiBoldItalic.ttf in Resources */,
 				B349C52A27F3038E00F2F1E9 /* NunitoSans-ExtraLightItalic.ttf in Resources */,
+				B3E2D4D627F57C150048D0F4 /* SignUpViewController.xib in Resources */,
 				B349C52327F3038E00F2F1E9 /* NunitoSans-Light.ttf in Resources */,
 				B349C52027F3038E00F2F1E9 /* NunitoSans-ExtraBoldItalic.ttf in Resources */,
 				B349C4E527F2FCE400F2F1E9 /* Main.storyboard in Resources */,
@@ -388,10 +433,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E2D4CC27F555D70048D0F4 /* LoginView.swift in Sources */,
 				B37029B127F455AF0069F69E /* LoginsViewController.swift in Sources */,
+				B3E2D4D527F57C150048D0F4 /* SignUpViewController.swift in Sources */,
 				B349C50E27F2FE2800F2F1E9 /* LoginViewController.swift in Sources */,
 				B349C4E227F2FCE400F2F1E9 /* ViewController.swift in Sources */,
 				B349C4DE27F2FCE400F2F1E9 /* AppDelegate.swift in Sources */,
+				B3E2D4CE27F578160048D0F4 /* LoginRouter.swift in Sources */,
 				B349C4E027F2FCE400F2F1E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
