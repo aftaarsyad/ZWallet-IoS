@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2943774227F6A6EF0068367F /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2943774127F6A6EF0068367F /* AuthApi.swift */; };
+		2990B09527F6AAA300694E2D /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 2990B09427F6AAA300694E2D /* CombineMoya */; };
+		2990B09727F6AAA300694E2D /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 2990B09627F6AAA300694E2D /* Moya */; };
+		2990B09927F6AAA300694E2D /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 2990B09827F6AAA300694E2D /* ReactiveMoya */; };
+		2990B09B27F6AAA300694E2D /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 2990B09A27F6AAA300694E2D /* RxMoya */; };
+		2990B09F27F6D23100694E2D /* AuthNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2990B09E27F6D23100694E2D /* AuthNetworkManager.swift */; };
+		2990B0A527F6D38600694E2D /* LoginDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2990B0A427F6D38600694E2D /* LoginDataResponse.swift */; };
+		2990B0A727F6D64F00694E2D /* AuthNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2990B0A627F6D64F00694E2D /* AuthNetworkManagerImpl.swift */; };
 		B349C4DE27F2FCE400F2F1E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B349C4DD27F2FCE400F2F1E9 /* AppDelegate.swift */; };
 		B349C4E027F2FCE400F2F1E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B349C4DF27F2FCE400F2F1E9 /* SceneDelegate.swift */; };
 		B349C4E227F2FCE400F2F1E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B349C4E127F2FCE400F2F1E9 /* ViewController.swift */; };
@@ -57,6 +65,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2943774127F6A6EF0068367F /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
+		2990B09E27F6D23100694E2D /* AuthNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkManager.swift; sourceTree = "<group>"; };
+		2990B0A427F6D38600694E2D /* LoginDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataResponse.swift; sourceTree = "<group>"; };
+		2990B0A627F6D64F00694E2D /* AuthNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkManagerImpl.swift; sourceTree = "<group>"; };
 		B349C4DA27F2FCE400F2F1E9 /* ZWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B349C4DD27F2FCE400F2F1E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B349C4DF27F2FCE400F2F1E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +110,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2990B09727F6AAA300694E2D /* Moya in Frameworks */,
+				2990B09527F6AAA300694E2D /* CombineMoya in Frameworks */,
+				2990B09B27F6AAA300694E2D /* RxMoya in Frameworks */,
+				2990B09927F6AAA300694E2D /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +134,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2943774027F6A6D30068367F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2943774127F6A6EF0068367F /* AuthApi.swift */,
+				2990B09E27F6D23100694E2D /* AuthNetworkManager.swift */,
+				2990B0A627F6D64F00694E2D /* AuthNetworkManagerImpl.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2990B09C27F6ABBD00694E2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2990B0A327F6D36D00694E2D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2990B0A427F6D38600694E2D /* LoginDataResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		B349C4D127F2FCE400F2F1E9 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +166,7 @@
 				B349C4F327F2FCE500F2F1E9 /* ZWalletTests */,
 				B349C4FD27F2FCE500F2F1E9 /* ZWalletUITests */,
 				B349C4DB27F2FCE400F2F1E9 /* Products */,
+				2990B09C27F6ABBD00694E2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +183,7 @@
 		B349C4DC27F2FCE400F2F1E9 /* ZWallet */ = {
 			isa = PBXGroup;
 			children = (
+				2943774027F6A6D30068367F /* Network */,
 				B37029A227F430860069F69E /* Module */,
 				B349C50F27F3035000F2F1E9 /* Fonts */,
 				B349C4DD27F2FCE400F2F1E9 /* AppDelegate.swift */,
@@ -205,6 +248,7 @@
 		B37029A327F430D60069F69E /* LoginModule */ = {
 			isa = PBXGroup;
 			children = (
+				2990B0A327F6D36D00694E2D /* Entity */,
 				B37029A827F4316D0069F69E /* View */,
 				B37029A727F431640069F69E /* Router */,
 				B37029A627F431590069F69E /* Presenter */,
@@ -302,6 +346,12 @@
 			dependencies = (
 			);
 			name = ZWallet;
+			packageProductDependencies = (
+				2990B09427F6AAA300694E2D /* CombineMoya */,
+				2990B09627F6AAA300694E2D /* Moya */,
+				2990B09827F6AAA300694E2D /* ReactiveMoya */,
+				2990B09A27F6AAA300694E2D /* RxMoya */,
+			);
 			productName = ZWallet;
 			productReference = B349C4DA27F2FCE400F2F1E9 /* ZWallet.app */;
 			productType = "com.apple.product-type.application";
@@ -374,6 +424,10 @@
 				Base,
 			);
 			mainGroup = B349C4D127F2FCE400F2F1E9;
+			packageReferences = (
+				2943774327F6A74D0068367F /* XCRemoteSwiftPackageReference "Moya" */,
+				2990B09327F6AAA300694E2D /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = B349C4DB27F2FCE400F2F1E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -436,8 +490,12 @@
 				B3E2D4CC27F555D70048D0F4 /* LoginView.swift in Sources */,
 				B37029B127F455AF0069F69E /* LoginsViewController.swift in Sources */,
 				B3E2D4D527F57C150048D0F4 /* SignUpViewController.swift in Sources */,
+				2943774227F6A6EF0068367F /* AuthApi.swift in Sources */,
 				B349C50E27F2FE2800F2F1E9 /* LoginViewController.swift in Sources */,
 				B349C4E227F2FCE400F2F1E9 /* ViewController.swift in Sources */,
+				2990B09F27F6D23100694E2D /* AuthNetworkManager.swift in Sources */,
+				2990B0A727F6D64F00694E2D /* AuthNetworkManagerImpl.swift in Sources */,
+				2990B0A527F6D38600694E2D /* LoginDataResponse.swift in Sources */,
 				B349C4DE27F2FCE400F2F1E9 /* AppDelegate.swift in Sources */,
 				B3E2D4CE27F578160048D0F4 /* LoginRouter.swift in Sources */,
 				B349C4E027F2FCE400F2F1E9 /* SceneDelegate.swift in Sources */,
@@ -774,6 +832,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2943774327F6A74D0068367F /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		2990B09327F6AAA300694E2D /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2990B09427F6AAA300694E2D /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2990B09327F6AAA300694E2D /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		2990B09627F6AAA300694E2D /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2990B09327F6AAA300694E2D /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		2990B09827F6AAA300694E2D /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2990B09327F6AAA300694E2D /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		2990B09A27F6AAA300694E2D /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2990B09327F6AAA300694E2D /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B349C4D227F2FCE400F2F1E9 /* Project object */;
 }

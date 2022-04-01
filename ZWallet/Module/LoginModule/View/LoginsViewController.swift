@@ -38,16 +38,16 @@ class LoginsViewController: UIViewController {
         passTF.delegate = self
     }
 
-    @IBAction func eyeToggle(_ sender: Any) {
-        (sender as! UIButton).isSelected = !(sender as! UIButton).isSelected
-        if (sender as! UIButton).isSelected {
-            self.passTF.isSecureTextEntry = false
-            eyeTogglebtn.image = UIImage(systemName: "eye")
-        } else {
-            self.passTF.isSecureTextEntry = true
-            eyeTogglebtn.image = UIImage(systemName: "eye.slash")
-        }
-    }
+//    @IBAction func eyeToggle(_ sender: Any) {
+//        (sender as! UIButton).isSelected = !(sender as! UIButton).isSelected
+//        if (sender as! UIButton).isSelected {
+//            self.passTF.isSecureTextEntry = false
+//            eyeTogglebtn.image = UIImage(systemName: "eye")
+//        } else {
+//            self.passTF.isSecureTextEntry = true
+//            eyeTogglebtn.image = UIImage(systemName: "eye.slash")
+//        }
+//    }
     
 }
 

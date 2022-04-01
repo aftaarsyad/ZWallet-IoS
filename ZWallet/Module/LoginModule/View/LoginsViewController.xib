@@ -119,9 +119,6 @@
                                             <rect key="frame" x="51" y="8" width="323" height="32"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                            <connections>
-                                                <action selector="eyeToggle:" destination="-1" eventType="editingDidEnd" id="FfD-BG-KuF"/>
-                                            </connections>
                                         </textField>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
