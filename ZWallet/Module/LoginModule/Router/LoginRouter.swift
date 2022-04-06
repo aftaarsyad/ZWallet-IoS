@@ -8,7 +8,5 @@
 import Foundation
 
 protocol LoginRouter {
-    func navigateForgotPass()
-    func navigateSignUp()
     func navigateHome()
 }

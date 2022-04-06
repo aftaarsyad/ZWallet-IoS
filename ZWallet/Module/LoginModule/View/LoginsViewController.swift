@@ -26,6 +26,9 @@ class LoginsViewController: UIViewController {
     @IBOutlet weak var eyeTogglebtn: UIImageView!
     
     @IBOutlet weak var viewContent: UIView!
+    @IBOutlet weak var errorMessage: UILabel!
+    
+    var presenter: LoginPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +39,16 @@ class LoginsViewController: UIViewController {
         textDescLogin.font = NunitoFont.nunitoRegular(sizeOf: 16)
         emailTF.delegate = self
         passTF.delegate = self
+        errorMessage.text = ""
     }
 
-//    @IBAction func eyeToggle(_ sender: Any) {
+    @IBAction func loginAction(_ sender: Any) {
+        let email: String = emailTF.text ?? ""
+        let password: String = passTF.text ?? ""
+        
+        self.presenter?.login(email: email, password: password)
+    }
+    //    @IBAction func eyeToggle(_ sender: Any) {
 //        (sender as! UIButton).isSelected = !(sender as! UIButton).isSelected
 //        if (sender as! UIButton).isSelected {
 //            self.passTF.isSecureTextEntry = false
@@ -57,6 +67,8 @@ extension LoginsViewController: LoginView {
         underLineEmail.backgroundColor = .red
         imgPass.image = UIImage(systemName: "lock")?.withTintColor(.red, renderingMode: .alwaysOriginal)
         underLinePass.backgroundColor = .red
+        errorMessage.text = "Username atau password salah"
+        errorMessage.textColor = .red
     }
 }
 
@@ -83,10 +95,12 @@ extension LoginsViewController : UITextFieldDelegate {
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
         handlingTextField(textField)
+        errorMessage.text = ""
     }
 
     func textFieldDidEndEditing(_ textField: UITextField) {
         handlingEmptyTextField(textField)
+        errorMessage.text = ""
     }
 }
 
