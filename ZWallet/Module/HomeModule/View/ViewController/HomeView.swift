@@ -11,3 +11,5 @@ protocol HomeView {
     func showUserProfileData(userProfile: UserProfileEntity)
     func showTransactionData(transactions: [TransactionEntity])
 }
+
+
